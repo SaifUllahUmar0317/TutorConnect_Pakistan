@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Registration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== IDENTICAL NAVBAR ========== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">
+      <div class="logo-icon"><i class="fas fa-chalkboard-user"></i></div>
+      <span class="logo-text">TutorConnect<span>Pakistan</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="tutor-register.html">Become a Tutor</a>
+      <a href="family-register.html" class="nav-cta btn">Find a Tutor</a>
+    </div>
+  </div>
+</nav>
+
+<!-- visible page title for users -->
+<header class="page-header" style="padding:28px 20px;max-width:1000px;margin:24px auto;">
+  <b><h1 style="margin-top:45px;font-size:28px;line-height:1.5;">Family Registration</h1></b>
+  <p style="color:var(--slate);margin-top:6px">Register as a family to find qualified university tutors for your child — free of charge.</p>
+</header>
+
+<main class="max-w-5xl mx-auto px-6">
+  <form id="familyRegistrationForm" class="space-y-8">
+    <div class="form-card">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div><label class="block font-semibold">Parent/Guardian Name *</label><input type="text" id="parentName" class="form-input" required placeholder="Sara Mahmood"></div>
+        <div><label class="block font-semibold">Email *</label><input type="email" id="parentEmail" class="form-input" required placeholder="sara@example.com"></div>
+        <div><label class="block font-semibold">Child's Name *</label><input type="text" id="childName" class="form-input" required placeholder="Ali"></div>
+        <div><label class="block font-semibold">Grade/Class *</label><select id="grade" class="form-input" required><option value="">Select Grade</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></div>
+        <div><label class="block font-semibold">Area/Location *</label><select id="area" class="form-input" required><option value="">Select Area</option><option>F-6</option><option>F-7</option><option>F-8</option><option>G-6</option><option>G-7</option><option>G-8</option><option>G-9</option><option>G-10</option><option>G-11</option><option>I-8</option><option>I-9</option><option>I-10</option><option>Blue Area</option><option>Bahria Town</option><option>DHA</option></select></div>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <label class="block font-semibold mb-3">Subjects Needed * (Select multiple)</label>
+      <div class="checkbox-grid">
+        <label><input type="checkbox" value="Mathematics"> Mathematics</label><label><input type="checkbox" value="Physics"> Physics</label><label><input type="checkbox" value="Chemistry"> Chemistry</label>
+        <label><input type="checkbox" value="Biology"> Biology</label><label><input type="checkbox" value="English"> English</label><label><input type="checkbox" value="Urdu"> Urdu</label>
+        <label><input type="checkbox" value="Computer Science"> Computer Science</label><label><input type="checkbox" value="History"> History</label><label><input type="checkbox" value="Geography"> Geography</label><label><input type="checkbox" value="Islamiyat"> Islamiyat</label>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <label class="block font-semibold mb-3">Preferred Timing * (Select multiple)</label>
+      <div class="checkbox-grid">
+        <label><input type="checkbox" value="Monday 3-5 PM"> Monday 3-5 PM</label><label><input type="checkbox" value="Monday 4-6 PM"> Monday 4-6 PM</label><label><input type="checkbox" value="Monday 5-7 PM"> Monday 5-7 PM</label>
+        <label><input type="checkbox" value="Tuesday 3-5 PM"> Tuesday 3-5 PM</label><label><input type="checkbox" value="Tuesday 4-6 PM"> Tuesday 4-6 PM</label><label><input type="checkbox" value="Tuesday 5-7 PM"> Tuesday 5-7 PM</label>
+        <label><input type="checkbox" value="Wednesday 3-5 PM"> Wednesday 3-5 PM</label><label><input type="checkbox" value="Wednesday 4-6 PM"> Wednesday 4-6 PM</label><label><input type="checkbox" value="Wednesday 5-7 PM"> Wednesday 5-7 PM</label>
+        <label><input type="checkbox" value="Thursday 3-5 PM"> Thursday 3-5 PM</label><label><input type="checkbox" value="Thursday 4-6 PM"> Thursday 4-6 PM</label><label><input type="checkbox" value="Thursday 5-7 PM"> Thursday 5-7 PM</label>
+        <label><input type="checkbox" value="Friday 3-5 PM"> Friday 3-5 PM</label><label><input type="checkbox" value="Friday 4-6 PM"> Friday 4-6 PM</label><label><input type="checkbox" value="Friday 5-7 PM"> Friday 5-7 PM</label>
+      </div>
+    </div>
+
+    <div class="bg-blue-50 p-4 rounded-xl text-sm text-gray-700">
+      <p><i class="fas fa-info-circle"></i> What happens next?</p>
+      <ul class="list-disc ml-5 mt-2"><li>Our AI will match you with verified tutors in your area.</li><li>You'll see tutor profiles with ratings and experience.</li><li>Sessions are funded by donors and NGOs - affordable for all.</li><li>Choose between WhatsApp video or in-person at safe venues.</li></ul>
+    </div>
+
+    <button type="submit" class="btn-primary w-full md:w-auto">Find Tutors</button>
+  </form>
+</main>
+
+<footer class="bg-gray-900 text-white text-center py-6 mt-12"><p>© 2025 TutorConnect Pakistan</p></footer>
+<div id="chatbot-root"></div>
+<script src="js/chatbot.js"></script>
+<script src="js/main.js"></script>
+<script>
+  (function () {
+    const current = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('#navbar .nav-links a').forEach(a => {
+      const href = (a.getAttribute('href') || '').split('/').pop().toLowerCase();
+      if (!href) return;
+      if (href === current) {
+        a.classList.add('active');
+        a.setAttribute('aria-current', 'page');
+      } else {
+        a.classList.remove('active');
+        a.removeAttribute('aria-current');
+      }
+    });
+  })();
+</script>
+</body>
+</html>

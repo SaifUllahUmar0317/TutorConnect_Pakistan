@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutor Registration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== IDENTICAL NAVBAR (same as index.html) ========== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">
+      <div class="logo-icon"><i class="fas fa-chalkboard-user"></i></div>
+      <span class="logo-text">TutorConnect<span>Pakistan</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="tutor-register.html">Become a Tutor</a>
+      <a href="family-register.html" class="nav-cta btn">Find a Tutor</a>
+    </div>
+  </div>
+</nav>
+
+<!-- visible page title for users -->
+<header class="page-header" style="padding:28px 20px;max-width:1000px;margin:24px auto;">
+  <b><h1 style="margin-top:45px;font-size:28px;line-height:1.5;">Tutor Registration</h1></b>
+  <p style="color:var(--slate);margin-top:6px">Join our community of university tutors — verify your credentials and start teaching.</p>
+</header>
+
+<main class="max-w-5xl mx-auto px-6">
+  <form id="tutorRegistrationForm" class="space-y-8">
+    <!-- Personal Details -->
+    <div class="form-card">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div><label class="block font-semibold">Full Name *</label><input type="text" id="fullName" class="form-input" required placeholder="Ahmed Khan"></div>
+        <div><label class="block font-semibold">Email *</label><input type="email" id="email" class="form-input" required placeholder="ahmed@example.com"></div>
+        <div><label class="block font-semibold">CNIC Number *</label><input type="text" id="cnic" class="form-input" required placeholder="12345 1234567 1"></div>
+        <div><label class="block font-semibold">University *</label><input type="text" id="university" class="form-input" required placeholder="NUST, LUMS, QAU, etc."></div>
+      </div>
+    </div>
+
+    <!-- File Uploads -->
+    <div class="form-card">
+      <label class="block font-semibold mb-2">Upload CNIC Copy *</label>
+      <div class="upload-area" id="cnicUploadArea"><i class="fas fa-cloud-upload-alt"></i> Click to upload CNIC (Image or PDF)<input type="file" id="cnicFile" accept="image/*,application/pdf" hidden></div>
+      <div id="cnicFileName" class="text-sm text-gray-500 mt-1"></div>
+
+      <label class="block font-semibold mt-4 mb-2">Upload University Transcript *</label>
+      <div class="upload-area" id="transcriptUploadArea"><i class="fas fa-cloud-upload-alt"></i> Click to upload Transcript (PDF)<input type="file" id="transcriptFile" accept="application/pdf" hidden></div>
+      <div id="transcriptFileName" class="text-sm text-gray-500 mt-1"></div>
+    </div>
+
+    <!-- Subjects (Grid) -->
+    <div class="form-card">
+      <label class="block font-semibold mb-3">Subjects You Can Teach * (Select multiple)</label>
+      <div class="checkbox-grid">
+        <label><input type="checkbox" value="Mathematics"> Mathematics</label>
+        <label><input type="checkbox" value="Physics"> Physics</label>
+        <label><input type="checkbox" value="Chemistry"> Chemistry</label>
+        <label><input type="checkbox" value="Biology"> Biology</label>
+        <label><input type="checkbox" value="English"> English</label>
+        <label><input type="checkbox" value="Urdu"> Urdu</label>
+        <label><input type="checkbox" value="Computer Science"> Computer Science</label>
+        <label><input type="checkbox" value="History"> History</label>
+        <label><input type="checkbox" value="Geography"> Geography</label>
+        <label><input type="checkbox" value="Islamiyat"> Islamiyat</label>
+      </div>
+    </div>
+
+    <!-- Areas -->
+    <div class="form-card">
+      <label class="block font-semibold mb-3">Areas You Can Cover * (Select multiple)</label>
+      <div class="checkbox-grid">
+        <label><input type="checkbox" value="F-6"> F-6</label><label><input type="checkbox" value="F-7"> F-7</label><label><input type="checkbox" value="F-8"> F-8</label>
+        <label><input type="checkbox" value="G-6"> G-6</label><label><input type="checkbox" value="G-7"> G-7</label><label><input type="checkbox" value="G-8"> G-8</label>
+        <label><input type="checkbox" value="G-9"> G-9</label><label><input type="checkbox" value="G-10"> G-10</label><label><input type="checkbox" value="G-11"> G-11</label>
+        <label><input type="checkbox" value="I-8"> I-8</label><label><input type="checkbox" value="I-9"> I-9</label><label><input type="checkbox" value="I-10"> I-10</label>
+        <label><input type="checkbox" value="Blue Area"> Blue Area</label><label><input type="checkbox" value="Bahria Town"> Bahria Town</label><label><input type="checkbox" value="DHA"> DHA</label>
+      </div>
+    </div>
+
+    <!-- Availability -->
+    <div class="form-card">
+      <label class="block font-semibold mb-3">Your Availability * (Select multiple time slots)</label>
+      <div class="checkbox-grid">
+        <label><input type="checkbox" value="Monday 3-5 PM"> Monday 3-5 PM</label>
+        <label><input type="checkbox" value="Monday 4-6 PM"> Monday 4-6 PM</label>
+        <label><input type="checkbox" value="Monday 5-7 PM"> Monday 5-7 PM</label>
+        <label><input type="checkbox" value="Tuesday 3-5 PM"> Tuesday 3-5 PM</label>
+        <label><input type="checkbox" value="Tuesday 4-6 PM"> Tuesday 4-6 PM</label>
+        <label><input type="checkbox" value="Tuesday 5-7 PM"> Tuesday 5-7 PM</label>
+        <label><input type="checkbox" value="Wednesday 3-5 PM"> Wednesday 3-5 PM</label>
+        <label><input type="checkbox" value="Wednesday 4-6 PM"> Wednesday 4-6 PM</label>
+        <label><input type="checkbox" value="Wednesday 5-7 PM"> Wednesday 5-7 PM</label>
+        <label><input type="checkbox" value="Thursday 3-5 PM"> Thursday 3-5 PM</label>
+        <label><input type="checkbox" value="Thursday 4-6 PM"> Thursday 4-6 PM</label>
+        <label><input type="checkbox" value="Thursday 5-7 PM"> Thursday 5-7 PM</label>
+        <label><input type="checkbox" value="Friday 3-5 PM"> Friday 3-5 PM</label>
+        <label><input type="checkbox" value="Friday 4-6 PM"> Friday 4-6 PM</label>
+        <label><input type="checkbox" value="Friday 5-7 PM"> Friday 5-7 PM</label>
+      </div>
+    </div>
+
+    <button type="submit" class="btn-primary w-full md:w-auto">Complete Registration</button>
+  </form>
+</main>
+
+<footer class="bg-gray-900 text-white text-center py-6 mt-12"><p>© 2025 TutorConnect Pakistan</p></footer>
+<div id="chatbot-root"></div>
+<script src="js/chatbot.js"></script>
+<script src="js/main.js"></script>
+<script>
+  (function () {
+    const current = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('#navbar .nav-links a').forEach(a => {
+      const href = (a.getAttribute('href') || '').split('/').pop().toLowerCase();
+      if (!href) return;
+      if (href === current) {
+        a.classList.add('active');
+        a.setAttribute('aria-current', 'page');
+      } else {
+        a.classList.remove('active');
+        a.removeAttribute('aria-current');
+      }
+    });
+  })();
+</script>
+</body>
+</html>

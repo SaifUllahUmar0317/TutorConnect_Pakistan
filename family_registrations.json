@@ -1,0 +1,20 @@
+[
+  {
+    "parentName": "mehmood",
+    "parentEmail": "f24607028@nutech.edu.pk",
+    "childName": "ali",
+    "grade": "10",
+    "area": "DHA",
+    "subjects": [
+      "Mathematics",
+      "Physics",
+      "Computer Science"
+    ],
+    "timings": [
+      "Friday 3-5 PM",
+      "Friday 4-6 PM",
+      "Friday 5-7 PM"
+    ],
+    "registered_at": "2026-05-10T08:54:42.995283"
+  }
+]

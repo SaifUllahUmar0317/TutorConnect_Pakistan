@@ -1,0 +1,27 @@
+[
+  {
+    "fullName": "Saif Ullah Umar",
+    "email": "f24607028@nutech.edu.pk",
+    "cnic": "17301-3284884-3",
+    "university": "Nutech",
+    "subjects": [
+      "Mathematics",
+      "Physics",
+      "Computer Science"
+    ],
+    "areas": [
+      "Blue Area",
+      "Bahria Town",
+      "DHA"
+    ],
+    "availability": [
+      "Friday 3-5 PM",
+      "Friday 4-6 PM",
+      "Friday 5-7 PM"
+    ],
+    "verified": false,
+    "earnings": 0,
+    "sessions": [],
+    "registered_at": "2026-05-10T08:54:07.501618"
+  }
+]

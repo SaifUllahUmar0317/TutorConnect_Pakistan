@@ -1,0 +1,21 @@
+{
+  "tutor_registration": "📚 To become a tutor, fill the registration form with your full name, email, CNIC, university, upload CNIC copy and transcript, select subjects, areas, and availability. After submission, we verify your documents within 2-3 days. Once approved, you'll receive session requests and earn a stipend per verified session.",
+  "family_registration": "🏠 Families register by providing parent/guardian name, email, child's name, grade, area, subjects needed, and preferred timings. Our AI then matches you with verified tutors. Sessions are donor-funded - affordable or free for families!",
+  "ai_matching": "🧠 Our AI matches tutors and families using three criteria: subject compatibility, geographic proximity (same area), and schedule overlap. It calculates a match score and suggests the best pairings. The more details you provide, the better the match!",
+  "subjects_available": "📖 We cover: Mathematics, Physics, Chemistry, Biology, English, Urdu, Computer Science, History, Geography, Islamiyat. You can select multiple subjects during registration.",
+  "areas_covered": "📍 Service areas: F-6, F-7, F-8, G-6, G-7, G-8, G-9, G-10, G-11, I-8, I-9, I-10, Blue Area, Bahria Town, DHA. Both tutors and families select the areas they cover.",
+  "timing_availability": "⏰ Available time slots: Monday to Friday, 3-5 PM, 4-6 PM, 5-7 PM. You can select multiple slots. AI matches overlapping availability between tutors and families.",
+  "verification_process": "🔒 Tutors must upload a clear CNIC image/PDF and university transcript. Our team verifies them within 2-3 business days. Families do not need document uploads. Verification ensures safety and quality.",
+  "tutor_stipend": "💰 Tutors earn a stipend per 1-hour verified session. Amount varies based on subject and donor funding (typically PKR 300-500 per session). Payments are released monthly after session logs are approved.",
+  "session_modes": "📱 Sessions can be conducted via WhatsApp video call, Zoom, or Google Meet. We also support in-person sessions at safe pre-approved venues like public libraries, mosques, or community centers with parental consent.",
+  "session_history": "📝 After each session, tutors submit a log (date, duration, topics covered). Both parties confirm. Logs are used to calculate stipends and track progress. You can view your session history in your dashboard.",
+  "ratings_feedback": "⭐ After each session, both tutor and family can rate the session (1-5 stars) and leave written feedback. Ratings help maintain quality and affect future matching.",
+  "donor_funding": "❤️ Our platform is supported by individual donors and NGOs. Your donations fund tutor stipends and keep sessions affordable for families. Contact donors@tutorconnect.pk to contribute.",
+  "cost_to_families": "💵 Sessions are heavily subsidised by donors. Many families pay nothing; others pay a minimal fee (PKR 100-200 per session). No family is turned away due to inability to pay.",
+  "upcoming_sessions": "📅 You can see your upcoming sessions on your dashboard. Tutors receive session requests; families see matched tutors. Both parties confirm schedules before sessions begin.",
+  "dashboard_access": "📊 After registration, you can view your dashboard. Tutors see verification status, upcoming sessions, and earnings. Families see child info, AI-matched tutors, and session history.",
+  "escalate_to_human": "🙋 I'll connect you with a human support agent. Please describe your issue briefly. An agent will respond within 24 hours via email or WhatsApp. You can also reach out directly to support@tutorconnect.pk",
+  "greeting": "👋 Assalam-o-Alaikum! I'm TutorConnect AI assistant. I can help with tutor registration, finding a tutor, AI matching, subjects, areas, timings, stipends, verification, session modes, and donor funding. How can I assist you today?",
+  "farewell": "👋 Thank you for chatting! May your learning journey be fruitful. Come back anytime you need help!",
+  "general_help": "🤖 I'm here to help with TutorConnect platform. You can ask about: becoming a tutor, registering your child, AI matching, subjects, areas, availability, stipends, verification, or session modes. Could you rephrase your question?"
+}
